@@ -1,1 +1,132 @@
+HTML:
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Home</title>
+</head>
+<body>
+
+<!--Nav Bar-->
+
+    <div id="navbar">
+
+        <header class="navbar-header"><img class="icon" src="images/icons/1.jpg"></header>
+
+        <nav>
+        <button>
+            <span>
+                Home
+            </span>
+        </button>
+
+        <button>
+            <span>
+                Lista de Música
+            </span>
+        </button>
+        <button>
+            <span>
+                Karaoke
+            </span>
+        </button>
+        <button>
+            <span>
+                Resenha
+            </span>
+        </button>
+    </nav>
+    </div>
+
+    <div id="main">
+        <h1>hwufgugfuywgfwygb</h1>
+    </div>
+</body>
+</html>
+
+CSS:
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 240px;
+    height: 100%;
+    padding: 40px 10px 30px 10px;
+    border-right: 1px solid #2f3336;
+}
+
+.icon{
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.navbar-header{
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+#navbar button{
+    height: 60px;
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+}
+
+#navbar button > span{
+    display: inline-flex;
+    align-items: center;
+    height: 48px;
+    padding-right: 45px;
+    padding-left: 12px;
+    border-radius: 24px;
+    line-height: 1px;
+    transition: all 0.4s;
+}
+
+#navbar button:hover > span{
+    background-color: #8116E0;
+    color: white;
+}
+
+#navbar button span{
+    font-size: 16px;
+}
+
+#navbar nav{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#main{
+    margin-left: 250px;
+    margin-right: 6px;
+    overflow: hidden;
+}
